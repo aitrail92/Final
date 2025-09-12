@@ -1,0 +1,222 @@
+@@ .. @@
+ .orders-list {
+     max-height: 400px;
+     overflow-y: auto;
++    padding-right: 8px;
+ }
+
+ .order-card {
+-    background: #f8f9fa;
+-    border: 1px solid #e9ecef;
++    background: white;
++    border: 1px solid #e5e7eb;
+     border-radius: 8px;
+-    padding: 16px;
++    padding: 20px;
+     margin-bottom: 16px;
++    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
++    transition: all 0.2s ease;
++}
++
++.order-card:hover {
++    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
++    transform: translateY(-1px);
+ }
+
+ .order-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+-    margin-bottom: 12px;
++    margin-bottom: 16px;
++    padding-bottom: 12px;
++    border-bottom: 1px solid #f3f4f6;
++}
++
++.order-customer h4 {
++    margin: 0 0 4px 0;
++    font-size: 18px;
++    font-weight: 600;
++    color: #1f2937;
++}
++
++.order-id {
++    font-size: 12px;
++    color: #6b7280;
++    font-weight: 500;
++    background: #f3f4f6;
++    padding: 2px 8px;
++    border-radius: 12px;
+ }
+
+-.order-header h4 {
+-    margin: 0;
+-    color: #333;
++.order-date {
++    font-size: 14px;
++    color: #6b7280;
++    font-weight: 500;
+ }
+
+ .order-details {
+-    font-size: 14px;
+-    line-height: 1.5;
++    display: flex;
++    flex-direction: column;
++    gap: 16px;
++}
++
++.order-contact,
++.order-address,
++.order-location {
++    display: flex;
++    flex-direction: column;
++    gap: 8px;
++}
++
++.order-details p {
++    margin: 0;
++    display: flex;
++    align-items: center;
++    gap: 8px;
++    font-size: 14px;
++    color: #374151;
++}
++
++.detail-icon {
++    width: 16px;
++    height: 16px;
++    color: #FF6B35;
++    flex-shrink: 0;
++}
++
++.address-line {
++    margin-left: 24px;
++    color: #6b7280;
++}
++
++.maps-link {
++    color: #FF6B35;
++    text-decoration: none;
++    font-size: 13px;
++    margin-left: 24px;
++    transition: color 0.2s ease;
++}
++
++.maps-link:hover {
++    color: #e55a2b;
++    text-decoration: underline;
+ }
+
+ .order-photo {
+-    margin-top: 12px;
++    display: flex;
++    flex-direction: column;
++    gap: 8px;
++}
++
++.house-photo {
++    max-width: 200px;
++    max-height: 150px;
++    border-radius: 8px;
++    cursor: pointer;
++    transition: transform 0.2s ease;
++    border: 2px solid #e5e7eb;
++}
++
++.house-photo:hover {
++    transform: scale(1.02);
++    border-color: #FF6B35;
++}
++
++.photo-modal-content {
++    max-width: 90vw;
++    max-height: 90vh;
++    padding: 0;
++    position: relative;
++}
++
++.modal-photo {
++    width: 100%;
++    height: auto;
++    max-width: 800px;
++    max-height: 80vh;
++    object-fit: contain;
++    border-radius: 8px;
++}
++
++.loading-orders {
++    text-align: center;
++    padding: 40px 20px;
++    color: #6b7280;
++    font-size: 16px;
+ }
+
+ .no-orders {
+     text-align: center;
+-    color: #666;
+-    font-style: italic;
+     padding: 40px 20px;
++    color: #6b7280;
++}
++
++.no-orders-icon {
++    width: 48px;
++    height: 48px;
++    color: #d1d5db;
++    margin-bottom: 16px;
++}
++
++.no-orders h3 {
++    margin: 0 0 8px 0;
++    font-size: 18px;
++    color: #374151;
++}
++
++.no-orders p {
++    margin: 0;
++    font-size: 14px;
++}
++
++.error-orders {
++    text-align: center;
++    padding: 40px 20px;
++    color: #dc2626;
++}
++
++.error-icon {
++    width: 48px;
++    height: 48px;
++    color: #dc2626;
++    margin-bottom: 16px;
++}
++
++.error-orders h3 {
++    margin: 0 0 8px 0;
++    font-size: 18px;
++    color: #dc2626;
++}
++
++.error-orders p {
++    margin: 0 0 16px 0;
++    font-size: 14px;
++    color: #6b7280;
+ }
+
+ /* Toast Notifications */
+@@ .. @@
+     .order-header {
+         flex-direction: column;
+         align-items: flex-start;
++        gap: 8px;
++    }
++    
++    .order-details {
++        gap: 12px;
++    }
++    
++    .house-photo {
++        max-width: 150px;
++        max-height: 100px;
+     }
+ }
