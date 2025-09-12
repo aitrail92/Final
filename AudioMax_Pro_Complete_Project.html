@@ -1,0 +1,2140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioMax Pro - Premium Wireless Bluetooth Speaker</title>
+    <meta name="description" content="Experience exceptional audio quality with our premium wireless speaker. Engineered for audiophiles who demand perfection. Free shipping on orders over $50.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF6B35' stroke-width='2'><path d='M3 9v6h4l5 5V4L7 9H3Z'/><path d='m16 10 2 2-2 2'/><path d='m19 7 3 3-3 3'/></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AudioMax Pro - Premium Wireless Bluetooth Speaker">
+    <meta property="og:description" content="Experience exceptional audio quality with our premium wireless speaker. Limited time FREE offer for selected users.">
+    <meta property="og:url" content=".">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AudioMax Pro - Premium Wireless Bluetooth Speaker">
+    <meta name="twitter:description" content="Experience exceptional audio quality with our premium wireless speaker. Limited time FREE offer for selected users.">
+
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* CSS Variables for Design System */
+        :root {
+            /* Colors */
+            --primary: #1A1A1A;
+            --secondary: #FF6B35;
+            --background: #ffffff;
+            --foreground: #1A1A1A;
+            --muted: #F0F0F0;
+            --muted-foreground: #666666;
+            --border: #E5E5E5;
+            --card: #ffffff;
+            --success: #28A745;
+            --error: #DC3545;
+            --warning: #FFC107;
+            
+            /* Spacing */
+            --space-1: 4px;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-5: 20px;
+            --space-6: 24px;
+            --space-8: 32px;
+            --space-12: 48px;
+            --space-16: 64px;
+            --space-20: 80px;
+            
+            /* Border Radius */
+            --radius: 6px;
+            --radius-lg: 12px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+            
+            /* Transitions */
+            --transition: all 0.2s ease-in-out;
+            --transition-slow: all 0.3s ease-in-out;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--foreground);
+        }
+
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.25rem; }
+        h3 { font-size: 1.5rem; }
+        h4 { font-size: 1.25rem; }
+        h5 { font-size: 1.125rem; }
+        h6 { font-size: 1rem; }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Utility Classes */
+        .hidden { display: none !important; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-4);
+        }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-4);
+            border: 1px solid transparent;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: white;
+            border-color: var(--secondary);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background-color: #e55a2b;
+            border-color: #e55a2b;
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            border-color: var(--border);
+            color: var(--foreground);
+        }
+
+        .btn-outline:hover:not(:disabled) {
+            background-color: var(--muted);
+            transform: translateY(-1px);
+        }
+
+        .btn-lg {
+            padding: var(--space-4) var(--space-8);
+            font-size: 18px;
+        }
+
+        .btn-sm {
+            padding: var(--space-1) var(--space-2);
+            font-size: 12px;
+        }
+
+        /* Icon Styles */
+        .icon-sm { width: 16px; height: 16px; }
+        .icon-md { width: 24px; height: 24px; }
+        .icon-lg { width: 32px; height: 32px; }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-4);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+        }
+
+        .admin-btn {
+            padding: var(--space-1) var(--space-2);
+            font-size: 12px;
+            border-color: var(--border);
+            color: var(--muted-foreground);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            color: var(--secondary);
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--foreground);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-20) var(--space-4);
+            background-color: var(--background);
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-12);
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .hero-image {
+            order: 2;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-image {
+                order: 1;
+            }
+        }
+
+        .product-card {
+            padding: var(--space-8);
+            background: var(--card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-product-img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .hero-content {
+            order: 1;
+            text-align: center;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content {
+                order: 2;
+                text-align: left;
+            }
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: var(--space-6);
+            line-height: 1.1;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 3.75rem;
+            }
+        }
+
+        .hero-description {
+            font-size: 20px;
+            color: var(--muted-foreground);
+            margin-bottom: var(--space-8);
+            max-width: 500px;
+        }
+
+        .pricing {
+            margin-bottom: var(--space-8);
+        }
+
+        .price-display {
+            display: flex;
+            align-items: baseline;
+            gap: var(--space-2);
+            justify-content: center;
+            margin-bottom: var(--space-4);
+        }
+
+        @media (min-width: 1024px) {
+            .price-display {
+                justify-content: flex-start;
+            }
+        }
+
+        .price-main {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .price-original {
+            font-size: 18px;
+            color: var(--muted-foreground);
+            text-decoration: line-through;
+        }
+
+        .shipping-info {
+            font-size: 14px;
+            color: var(--success);
+            font-weight: 500;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+            justify-content: center;
+        }
+
+        @media (min-width: 640px) {
+            .hero-actions {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-actions {
+                justify-content: flex-start;
+            }
+        }
+
+        /* Section Styles */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-16);
+        }
+
+        .section-title {
+            margin-bottom: var(--space-4);
+        }
+
+        .section-description {
+            font-size: 20px;
+            color: var(--muted-foreground);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: var(--space-20) var(--space-4);
+            background-color: var(--background);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+        }
+
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .gallery-card {
+            padding: var(--space-6);
+            background: var(--card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-card-wide {
+            grid-column: span 1;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-card-wide {
+                grid-column: span 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery-card-wide {
+                grid-column: span 1;
+            }
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 256px;
+            object-fit: contain;
+            margin-bottom: var(--space-4);
+            border-radius: var(--radius);
+        }
+
+        .gallery-img-cover {
+            object-fit: cover;
+        }
+
+        .gallery-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: var(--space-2);
+        }
+
+        .gallery-desc {
+            font-size: 14px;
+            color: var(--muted-foreground);
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: var(--space-20) var(--space-4);
+            background-color: rgba(240, 240, 240, 0.3);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+        }
+
+        @media (min-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .feature-card {
+            padding: var(--space-6);
+            background: var(--card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-4);
+        }
+
+        .feature-icon i {
+            width: 32px;
+            height: 32px;
+            color: var(--secondary);
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: var(--space-3);
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            color: var(--muted-foreground);
+            line-height: 1.6;
+        }
+
+        /* Order Section */
+        .order-section {
+            padding: var(--space-20) var(--space-4);
+            background-color: rgba(240, 240, 240, 0.2);
+        }
+
+        .order-form-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .order-header {
+            padding: var(--space-6);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .order-summary {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .order-total {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .order-form {
+            padding: var(--space-6);
+        }
+
+        /* Form Styles */
+        .form-section {
+            margin-bottom: var(--space-6);
+        }
+
+        .form-section-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: var(--space-4);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-4);
+        }
+
+        @media (min-width: 768px) {
+            .form-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .form-row-3 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .form-row-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .form-group {
+            margin-bottom: var(--space-4);
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: var(--space-2);
+            color: var(--foreground);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--space-3);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 14px;
+            background: var(--background);
+            transition: var(--transition);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .form-input:invalid {
+            border-color: var(--error);
+        }
+
+        /* Upload Section */
+        .upload-section, .location-section {
+            margin-top: var(--space-6);
+            padding: var(--space-4);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            background: rgba(240, 240, 240, 0.2);
+        }
+
+        .upload-header, .location-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-bottom: var(--space-3);
+        }
+
+        .upload-title, .location-title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .upload-desc, .location-desc {
+            font-size: 12px;
+            color: var(--muted-foreground);
+            margin-bottom: var(--space-3);
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .upload-btn, .location-btn {
+            width: 100%;
+        }
+
+        .upload-success, .location-status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-3);
+            border-radius: var(--radius);
+            font-size: 14px;
+        }
+
+        .upload-success {
+            background: rgba(40, 167, 69, 0.1);
+            border: 1px solid rgba(40, 167, 69, 0.2);
+            color: var(--success);
+        }
+
+        .location-success {
+            background: rgba(40, 167, 69, 0.1);
+            border: 1px solid rgba(40, 167, 69, 0.2);
+            color: var(--success);
+        }
+
+        .location-requesting {
+            background: rgba(0, 123, 255, 0.1);
+            border: 1px solid rgba(0, 123, 255, 0.2);
+            color: #007bff;
+            justify-content: center;
+        }
+
+        .location-denied {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.2);
+            color: var(--warning);
+            justify-content: center;
+        }
+
+        .success-icon {
+            color: var(--success);
+        }
+
+        .remove-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--muted-foreground);
+            padding: var(--space-1);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .remove-btn:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: var(--space-6);
+            font-size: 18px;
+            margin-bottom: var(--space-4);
+        }
+
+        .secure-checkout {
+            text-align: center;
+            font-size: 12px;
+            color: var(--muted-foreground);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--foreground);
+            color: var(--background);
+            padding: var(--space-12) var(--space-4);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+            margin-bottom: var(--space-8);
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-bottom: var(--space-4);
+        }
+
+        .footer-desc {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        .footer-title {
+            font-weight: 500;
+            margin-bottom: var(--space-4);
+        }
+
+        .footer-links {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-links p {
+            margin-bottom: var(--space-2);
+        }
+
+        .footer-link {
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .footer-link:hover {
+            color: var(--background);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: var(--space-8);
+            text-align: center;
+        }
+
+        .footer-copyright {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            padding: var(--space-4);
+        }
+
+        .modal-content {
+            background: var(--background);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            max-width: 500px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .admin-modal {
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-6);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-1);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .close-btn:hover {
+            background: var(--muted);
+        }
+
+        .success-icon-large {
+            width: 80px;
+            height: 80px;
+            color: var(--success);
+            margin: 0 auto var(--space-6);
+        }
+
+        .success-title {
+            font-size: 2rem;
+            margin-bottom: var(--space-4);
+        }
+
+        .success-message {
+            font-size: 18px;
+            color: var(--muted-foreground);
+            margin-bottom: var(--space-6);
+        }
+
+        .success-email {
+            font-size: 14px;
+            color: var(--muted-foreground);
+            margin-bottom: var(--space-6);
+        }
+
+        /* Admin Panel Styles */
+        .admin-login {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .admin-dashboard {
+            width: 100%;
+        }
+
+        .admin-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-6);
+        }
+
+        .orders-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .order-item {
+            padding: var(--space-4);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: var(--space-4);
+            background: var(--muted);
+        }
+
+        .order-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-4);
+        }
+
+        @media (min-width: 768px) {
+            .order-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .order-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .order-section-title {
+            font-weight: 500;
+            margin-bottom: var(--space-2);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .order-info {
+            font-size: 14px;
+            color: var(--muted-foreground);
+        }
+
+        .order-info p {
+            margin-bottom: var(--space-1);
+        }
+
+        .house-photo {
+            width: 128px;
+            height: 96px;
+            border-radius: var(--radius);
+            object-fit: cover;
+            margin-bottom: var(--space-2);
+        }
+
+        .view-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-1);
+            font-size: 12px;
+            color: var(--secondary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .view-link:hover {
+            color: #e55a2b;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            top: var(--space-4);
+            right: var(--space-4);
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            min-width: 300px;
+            max-width: 400px;
+        }
+
+        .toast-content {
+            padding: var(--space-4);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-2);
+        }
+
+        .toast-close {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-1);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .toast-close:hover {
+            background: var(--muted);
+        }
+
+        .toast.success {
+            border-color: var(--success);
+        }
+
+        .toast.error {
+            border-color: var(--error);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.875rem;
+            }
+            
+            .section-description {
+                font-size: 16px;
+            }
+            
+            .btn-lg {
+                padding: var(--space-3) var(--space-6);
+                font-size: 16px;
+            }
+            
+            .container {
+                padding: 0 var(--space-3);
+            }
+        }
+
+        /* Loading States */
+        .btn:disabled {
+            opacity: 0.5;
+        }
+
+        .loading {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Focus styles for keyboard navigation */
+        .btn:focus-visible,
+        .form-input:focus-visible {
+            outline: 2px solid var(--secondary);
+            outline-offset: 2px;
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --border: #000000;
+                --muted: #f8f8f8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <button id="admin-btn" class="admin-btn" data-testid="button-admin-access">
+                    <i data-lucide="shield" class="icon-sm"></i>
+                    Admin
+                </button>
+                <div class="logo" data-testid="logo">
+                    <i data-lucide="volume-2" class="logo-icon"></i>
+                    <span class="logo-text">AudioMax</span>
+                </div>
+            </div>
+            <button id="header-cta" class="btn btn-primary" data-testid="button-header-cta">
+                Order Now
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Product Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <div class="product-card">
+                        <img 
+                            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' fill='%23f0f0f0'><rect width='400' height='300' fill='%23f8f9fa'/><rect x='50' y='50' width='300' height='200' rx='20' fill='%23333'/><rect x='80' y='80' width='240' height='140' rx='10' fill='%23444'/><circle cx='200' cy='120' r='30' fill='%23FF6B35'/><circle cx='200' cy='180' r='30' fill='%23FF6B35'/><text x='200' y='250' text-anchor='middle' fill='%23666' font-family='Arial' font-size='16'>AudioMax Pro</text></svg>" 
+                            alt="Premium Wireless Bluetooth Speaker"
+                            class="hero-product-img"
+                            data-testid="img-hero-product"
+                        >
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <h1 class="hero-title" data-testid="text-product-title">AudioMax Pro</h1>
+                    <p class="hero-description" data-testid="text-product-description">
+                        Experience exceptional audio quality with our premium wireless speaker. 
+                        Engineered for audiophiles who demand perfection.
+                    </p>
+                    
+                    <div class="pricing">
+                        <div class="price-display">
+                            <span class="price-main" data-testid="text-price">FREE</span>
+                            <span class="price-original">$299</span>
+                        </div>
+                        <p class="shipping-info" data-testid="text-shipping">
+                            Limited time offer for selected users
+                        </p>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button id="order-now-btn" class="btn btn-primary btn-lg" data-testid="button-order-now">
+                            Order Now
+                        </button>
+                        <button id="learn-more-btn" class="btn btn-outline btn-lg" data-testid="button-learn-more">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-testid="text-gallery-title">See It In Detail</h2>
+                    <p class="section-description" data-testid="text-gallery-description">
+                        Crafted with precision and engineered for superior performance
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card" data-testid="card-product-main">
+                        <img 
+                            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 256' fill='%23f0f0f0'><rect width='400' height='256' fill='%23f8f9fa'/><rect x='80' y='60' width='240' height='136' rx='20' fill='%23333'/><circle cx='200' cy='100' r='20' fill='%23FF6B35'/><circle cx='200' cy='156' r='20' fill='%23FF6B35'/></svg>"
+                            alt="AudioMax Pro - Main View"
+                            class="gallery-img"
+                            data-testid="img-product-main"
+                        >
+                        <h3 class="gallery-title">Premium Design</h3>
+                        <p class="gallery-desc">Sleek black finish with vibrant orange accents</p>
+                    </div>
+
+                    <div class="gallery-card" data-testid="card-product-side">
+                        <img 
+                            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 256' fill='%23f0f0f0'><rect width='400' height='256' fill='%23f8f9fa'/><rect x='100' y='80' width='200' height='96' rx='15' fill='%23444'/><rect x='120' y='100' width='160' height='56' rx='8' fill='%23FF6B35'/></svg>"
+                            alt="AudioMax Pro - Side View"
+                            class="gallery-img"
+                            data-testid="img-product-side"
+                        >
+                        <h3 class="gallery-title">Advanced Drivers</h3>
+                        <p class="gallery-desc">High-end components for exceptional sound quality</p>
+                    </div>
+
+                    <div class="gallery-card gallery-card-wide" data-testid="card-product-lifestyle">
+                        <img 
+                            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 256' fill='%23f0f0f0'><rect width='400' height='256' fill='%23e9ecef'/><rect x='20' y='180' width='360' height='76' fill='%23dee2e6'/><rect x='50' y='140' width='120' height='60' rx='10' fill='%23333'/><rect x='230' y='130' width='140' height='80' rx='5' fill='%23666'/><circle cx='110' cy='160' r='8' fill='%23FF6B35'/></svg>"
+                            alt="AudioMax Pro in Modern Home"
+                            class="gallery-img gallery-img-cover"
+                            data-testid="img-product-lifestyle"
+                        >
+                        <h3 class="gallery-title">Perfect For Any Space</h3>
+                        <p class="gallery-desc">Complements modern home decor beautifully</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-testid="text-features-title">Why AudioMax Pro?</h2>
+                    <p class="section-description" data-testid="text-features-description">
+                        Engineered with cutting-edge technology for the ultimate audio experience
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card" data-testid="card-feature-0">
+                        <div class="feature-icon">
+                            <i data-lucide="volume-2" data-testid="icon-feature-0"></i>
+                        </div>
+                        <h3 class="feature-title" data-testid="text-feature-title-0">Premium Audio</h3>
+                        <p class="feature-desc" data-testid="text-feature-desc-0">
+                            40W stereo sound with deep bass and crystal clear highs for an immersive listening experience
+                        </p>
+                    </div>
+
+                    <div class="feature-card" data-testid="card-feature-1">
+                        <div class="feature-icon">
+                            <i data-lucide="bluetooth" data-testid="icon-feature-1"></i>
+                        </div>
+                        <h3 class="feature-title" data-testid="text-feature-title-1">Bluetooth 5.0</h3>
+                        <p class="feature-desc" data-testid="text-feature-desc-1">
+                            Latest wireless technology for stable connection up to 30 feet with all your devices
+                        </p>
+                    </div>
+
+                    <div class="feature-card" data-testid="card-feature-2">
+                        <div class="feature-icon">
+                            <i data-lucide="battery" data-testid="icon-feature-2"></i>
+                        </div>
+                        <h3 class="feature-title" data-testid="text-feature-title-2">20-Hour Battery</h3>
+                        <p class="feature-desc" data-testid="text-feature-desc-2">
+                            All-day battery life with quick charge capability - 3 hours playtime with just 15 minutes charge
+                        </p>
+                    </div>
+
+                    <div class="feature-card" data-testid="card-feature-3">
+                        <div class="feature-icon">
+                            <i data-lucide="wifi" data-testid="icon-feature-3"></i>
+                        </div>
+                        <h3 class="feature-title" data-testid="text-feature-title-3">Multi-Connect</h3>
+                        <p class="feature-desc" data-testid="text-feature-desc-3">
+                            Connect up to 2 devices simultaneously and switch between them seamlessly
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section id="order-section" class="order-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-testid="text-order-title">Complete Your Order</h2>
+                    <p class="section-description" data-testid="text-order-description">
+                        Fill in your details below and we'll get your AudioMax Pro shipped to you
+                    </p>
+                </div>
+
+                <div class="order-form-card">
+                    <div class="order-header">
+                        <span class="order-summary" data-testid="text-order-summary">Order Summary</span>
+                        <span class="order-total" data-testid="text-total-price">FREE</span>
+                    </div>
+
+                    <form id="order-form" class="order-form">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3 class="form-section-title" data-testid="text-personal-info">Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input 
+                                        type="text" 
+                                        id="firstName" 
+                                        name="firstName" 
+                                        class="form-input" 
+                                        required
+                                        data-testid="input-first-name"
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input 
+                                        type="text" 
+                                        id="lastName" 
+                                        name="lastName" 
+                                        class="form-input" 
+                                        required
+                                        data-testid="input-last-name"
+                                    >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    required
+                                    data-testid="input-email"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="form-input"
+                                    data-testid="input-phone"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Shipping Address -->
+                        <div class="form-section">
+                            <h3 class="form-section-title" data-testid="text-shipping-info">Shipping Address</h3>
+                            <div class="form-group">
+                                <label for="address" class="form-label">Street Address *</label>
+                                <input 
+                                    type="text" 
+                                    id="address" 
+                                    name="address" 
+                                    class="form-input" 
+                                    required
+                                    data-testid="input-address"
+                                >
+                            </div>
+                            <div class="form-row form-row-3">
+                                <div class="form-group">
+                                    <label for="city" class="form-label">City *</label>
+                                    <input 
+                                        type="text" 
+                                        id="city" 
+                                        name="city" 
+                                        class="form-input" 
+                                        required
+                                        data-testid="input-city"
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label for="state" class="form-label">State *</label>
+                                    <input 
+                                        type="text" 
+                                        id="state" 
+                                        name="state" 
+                                        class="form-input" 
+                                        required
+                                        data-testid="input-state"
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label for="zipCode" class="form-label">ZIP Code *</label>
+                                    <input 
+                                        type="text" 
+                                        id="zipCode" 
+                                        name="zipCode" 
+                                        class="form-input" 
+                                        required
+                                        data-testid="input-zip"
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Photo Upload Section -->
+                            <div class="upload-section">
+                                <div class="upload-header">
+                                    <i data-lucide="camera" class="icon-sm"></i>
+                                    <label class="upload-title">Upload Photo of Your Home *</label>
+                                </div>
+                                <p class="upload-desc">Required: Please upload a photo of your house to ensure accurate delivery</p>
+                                
+                                <input 
+                                    type="file" 
+                                    id="house-photo" 
+                                    accept="image/jpeg,image/png,image/jpg,image/webp"
+                                    class="file-input"
+                                    required
+                                    data-testid="input-photo-file"
+                                >
+                                
+                                <button 
+                                    type="button" 
+                                    id="upload-btn" 
+                                    class="btn btn-outline upload-btn"
+                                    data-testid="button-upload-photo"
+                                >
+                                    <i data-lucide="upload" class="icon-sm"></i>
+                                    Choose Photo
+                                </button>
+                                
+                                <div id="photo-success" class="upload-success hidden" data-testid="text-photo-uploaded">
+                                    <i data-lucide="check-circle" class="icon-sm success-icon"></i>
+                                    <span>Photo uploaded successfully</span>
+                                    <button type="button" id="remove-photo" class="remove-btn" data-testid="button-remove-photo">
+                                        <i data-lucide="x" class="icon-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Location Permission Section -->
+                            <div class="location-section">
+                                <div class="location-header">
+                                    <i data-lucide="map-pin" class="icon-sm"></i>
+                                    <label class="location-title">Share Your Location *</label>
+                                </div>
+                                <p class="location-desc">Required: Please allow location access for precise delivery coordination</p>
+                                
+                                <button 
+                                    type="button" 
+                                    id="location-btn" 
+                                    class="btn btn-outline location-btn"
+                                    data-testid="button-request-location"
+                                >
+                                    <i data-lucide="map-pin" class="icon-sm"></i>
+                                    Allow Location Access
+                                </button>
+                                
+                                <div id="location-requesting" class="location-status location-requesting hidden">
+                                    <span>Requesting location permission...</span>
+                                </div>
+                                
+                                <div id="location-success" class="location-status location-success hidden" data-testid="text-location-granted">
+                                    <i data-lucide="check-circle" class="icon-sm success-icon"></i>
+                                    <span>Location captured successfully</span>
+                                </div>
+                                
+                                <div id="location-denied" class="location-status location-denied hidden">
+                                    <span>Location permission denied. Please allow location access to complete your order.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            id="submit-order" 
+                            class="btn btn-primary btn-lg submit-btn"
+                            data-testid="button-submit-order"
+                        >
+                            Get Your FREE Speaker
+                        </button>
+                        
+                        <p class="secure-checkout" data-testid="text-secure-checkout">
+                            🔒 Secure signup • Free shipping • Limited time offer
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo" data-testid="footer-logo">
+                        <i data-lucide="volume-2" class="logo-icon"></i>
+                        <span class="logo-text">AudioMax</span>
+                    </div>
+                    <p class="footer-desc" data-testid="footer-description">
+                        Premium audio equipment for discerning listeners who demand exceptional quality and design.
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title" data-testid="footer-contact-title">Contact</h3>
+                    <div class="footer-links">
+                        <p data-testid="footer-email">support@audiomax.com</p>
+                        <p data-testid="footer-phone">1-800-AUDIOMAX</p>
+                        <p data-testid="footer-address">San Francisco, CA</p>
+                    </div>
+                </div>
+
+                <div class="footer-policies">
+                    <h3 class="footer-title" data-testid="footer-policies-title">Policies</h3>
+                    <div class="footer-links">
+                        <p class="footer-link" data-testid="footer-shipping">Free Shipping & Returns</p>
+                        <p class="footer-link" data-testid="footer-warranty">2-Year Warranty</p>
+                        <p class="footer-link" data-testid="footer-privacy">Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-testid="footer-copyright">
+                    © 2024 AudioMax. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal hidden">
+        <div class="modal-content">
+            <i data-lucide="check-circle" class="success-icon-large" data-testid="icon-success"></i>
+            <h2 class="success-title" data-testid="text-success-title">Order Confirmed!</h2>
+            <p class="success-message" data-testid="text-success-message">
+                Thank you for your purchase. Your AudioMax Pro will be shipped within 2-3 business days.
+            </p>
+            <p class="success-email" data-testid="text-success-email">
+                A confirmation email has been sent to <span id="confirmation-email"></span>
+            </p>
+            <button id="close-success" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div id="admin-modal" class="modal hidden">
+        <div class="modal-content admin-modal">
+            <div class="modal-header">
+                <h2>Admin Dashboard</h2>
+                <button id="close-admin" class="close-btn">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <div id="admin-login" class="admin-login">
+                <h3>Admin Login</h3>
+                <form id="admin-login-form">
+                    <div class="form-group">
+                        <label for="admin-email">Email</label>
+                        <input type="email" id="admin-email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-password">Password</label>
+                        <input type="password" id="admin-password" class="form-input" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+
+            <div id="admin-dashboard" class="admin-dashboard hidden">
+                <div class="admin-security-notice" style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 12px; border-radius: 6px; margin-bottom: 20px; font-size: 14px; color: #856404;">
+                    ⚠️ <strong>Demo Only:</strong> This admin panel uses client-side authentication for demonstration purposes only. Not suitable for production use.
+                </div>
+                <div class="admin-header">
+                    <h3>Customer Orders</h3>
+                    <button id="admin-logout" class="btn btn-outline">
+                        <i data-lucide="log-out" class="icon-sm"></i>
+                        Logout
+                    </button>
+                </div>
+                <div id="orders-list" class="orders-list">
+                    <!-- Orders will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <span id="toast-message"></span>
+            <button id="close-toast" class="toast-close">
+                <i data-lucide="x" class="icon-sm"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // AudioMax Pro - Static Website JavaScript
+        // Simulates the React app functionality with vanilla JavaScript
+
+        // Global state
+        let currentLocation = null;
+        let uploadedPhoto = null;
+        let isAdminAuthenticated = false;
+
+        // Toast notification system
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            
+            toastMessage.textContent = message;
+            toast.className = `toast ${type}`;
+            toast.classList.remove('hidden');
+            
+            // Auto hide after 4 seconds
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4000);
+        }
+
+        // Close toast
+        document.getElementById('close-toast')?.addEventListener('click', () => {
+            document.getElementById('toast').classList.add('hidden');
+        });
+
+        // Smooth scroll utility
+        function scrollToElement(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Initialize Lucide icons
+        function initializeIcons() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+
+        // Header functionality
+        function initializeHeader() {
+            // Order Now button click
+            document.getElementById('header-cta')?.addEventListener('click', () => {
+                scrollToElement('order-section');
+            });
+            
+            // Hero Order Now button
+            document.getElementById('order-now-btn')?.addEventListener('click', () => {
+                scrollToElement('order-section');
+            });
+            
+            // Learn More button (placeholder)
+            document.getElementById('learn-more-btn')?.addEventListener('click', () => {
+                showToast('Learn More functionality coming soon!', 'info');
+            });
+            
+            // Admin button
+            document.getElementById('admin-btn')?.addEventListener('click', () => {
+                showAdminModal();
+            });
+        }
+
+        // Photo upload functionality
+        function initializePhotoUpload() {
+            const fileInput = document.getElementById('house-photo');
+            const uploadBtn = document.getElementById('upload-btn');
+            const photoSuccess = document.getElementById('photo-success');
+            const removePhotoBtn = document.getElementById('remove-photo');
+            
+            // Trigger file input when upload button is clicked
+            uploadBtn?.addEventListener('click', () => {
+                fileInput?.click();
+            });
+            
+            // Handle file selection
+            fileInput?.addEventListener('change', (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    handlePhotoUpload(file);
+                }
+            });
+            
+            // Remove photo
+            removePhotoBtn?.addEventListener('click', () => {
+                removePhoto();
+            });
+        }
+
+        function handlePhotoUpload(file) {
+            // Validate file type
+            const validTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/webp'];
+            if (!validTypes.includes(file.type)) {
+                showToast('Please upload a JPEG, PNG, or WebP image.', 'error');
+                return;
+            }
+            
+            // Validate file size (2MB for base64 storage)
+            if (file.size > 2 * 1024 * 1024) {
+                showToast('Please upload a photo smaller than 2MB.', 'error');
+                return;
+            }
+            
+            // Simulate upload process
+            const uploadBtn = document.getElementById('upload-btn');
+            const photoSuccess = document.getElementById('photo-success');
+            
+            uploadBtn.textContent = 'Uploading...';
+            uploadBtn.disabled = true;
+            
+            // Convert to base64 for persistent storage
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                uploadedPhoto = {
+                    url: e.target.result, // base64 data URL
+                    name: file.name,
+                    size: file.size,
+                    type: file.type
+                };
+                
+                // Show success state
+                uploadBtn.classList.add('hidden');
+                photoSuccess.classList.remove('hidden');
+                
+                showToast('Photo uploaded successfully');
+                
+                // Reset button
+                uploadBtn.textContent = 'Choose Photo';
+                uploadBtn.disabled = false;
+            };
+            
+            reader.onerror = function() {
+                showToast('Error reading photo file.', 'error');
+                uploadBtn.textContent = 'Choose Photo';
+                uploadBtn.disabled = false;
+            };
+            
+            // Start reading the file as data URL
+            reader.readAsDataURL(file);
+        }
+
+        function removePhoto() {
+            const uploadBtn = document.getElementById('upload-btn');
+            const photoSuccess = document.getElementById('photo-success');
+            const fileInput = document.getElementById('house-photo');
+            
+            // Reset state
+            uploadedPhoto = null;
+            fileInput.value = '';
+            
+            // Reset UI
+            uploadBtn.classList.remove('hidden');
+            photoSuccess.classList.add('hidden');
+            
+            showToast('Photo removed');
+        }
+
+        // Location functionality
+        function initializeLocation() {
+            const locationBtn = document.getElementById('location-btn');
+            
+            locationBtn?.addEventListener('click', () => {
+                requestLocation();
+            });
+        }
+
+        function requestLocation() {
+            if (!navigator.geolocation) {
+                showToast('Your browser doesn\'t support location services.', 'error');
+                return;
+            }
+            
+            const locationBtn = document.getElementById('location-btn');
+            const requestingDiv = document.getElementById('location-requesting');
+            const successDiv = document.getElementById('location-success');
+            const deniedDiv = document.getElementById('location-denied');
+            
+            // Show requesting state
+            locationBtn.classList.add('hidden');
+            requestingDiv.classList.remove('hidden');
+            
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    currentLocation = {
+                        latitude: position.coords.latitude,
+                        longitude: position.coords.longitude
+                    };
+                    
+                    // Show success state
+                    requestingDiv.classList.add('hidden');
+                    successDiv.classList.remove('hidden');
+                    
+                    showToast('Location captured successfully');
+                },
+                (error) => {
+                    console.error('Location error:', error);
+                    
+                    // Show denied state
+                    requestingDiv.classList.add('hidden');
+                    deniedDiv.classList.remove('hidden');
+                    
+                    showToast('Location permission denied. Please allow location access to complete your order.', 'error');
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 60000
+                }
+            );
+        }
+
+        // Form handling
+        function initializeOrderForm() {
+            const form = document.getElementById('order-form');
+            
+            form?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                handleOrderSubmission(form);
+            });
+        }
+
+        function handleOrderSubmission(form) {
+            const submitBtn = document.getElementById('submit-order');
+            const formData = new FormData(form);
+            
+            // Get form values
+            const orderData = {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                address: formData.get('address'),
+                city: formData.get('city'),
+                state: formData.get('state'),
+                zipCode: formData.get('zipCode'),
+                country: 'United States',
+                photoUrl: uploadedPhoto?.url || null,
+                latitude: currentLocation?.latitude || null,
+                longitude: currentLocation?.longitude || null,
+                createdAt: new Date().toISOString(),
+                id: generateOrderId()
+            };
+            
+            // Basic validation
+            const requiredFields = ['firstName', 'lastName', 'email', 'address', 'city', 'state', 'zipCode'];
+            const missingFields = requiredFields.filter(field => !orderData[field]);
+            
+            if (missingFields.length > 0) {
+                showToast('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Photo upload validation (now mandatory)
+            if (!uploadedPhoto) {
+                showToast('Please upload a photo of your house - this is required for delivery.', 'error');
+                return;
+            }
+            
+            // Location validation (now mandatory)
+            if (!currentLocation) {
+                showToast('Please allow location access - this is required for precise delivery.', 'error');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(orderData.email)) {
+                showToast('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.textContent = 'Processing Order...';
+            submitBtn.disabled = true;
+            
+            // Simulate order processing
+            setTimeout(() => {
+                // Save order to localStorage
+                saveOrder(orderData);
+                
+                // Reset form
+                form.reset();
+                resetUploadState();
+                resetLocationState();
+                
+                // Show success modal
+                showSuccessModal(orderData.email);
+                
+                // Reset button
+                submitBtn.textContent = 'Get Your FREE Speaker';
+                submitBtn.disabled = false;
+            }, 2000);
+        }
+
+        function generateOrderId() {
+            return 'order_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        }
+
+        function saveOrder(orderData) {
+            const orders = getOrders();
+            orders.push(orderData);
+            localStorage.setItem('audiomax_orders', JSON.stringify(orders));
+        }
+
+        function getOrders() {
+            const orders = localStorage.getItem('audiomax_orders');
+            return orders ? JSON.parse(orders) : [];
+        }
+
+        function resetUploadState() {
+            const uploadBtn = document.getElementById('upload-btn');
+            const photoSuccess = document.getElementById('photo-success');
+            const fileInput = document.getElementById('house-photo');
+            
+            uploadedPhoto = null;
+            fileInput.value = '';
+            uploadBtn.classList.remove('hidden');
+            photoSuccess.classList.add('hidden');
+        }
+
+        function resetLocationState() {
+            const locationBtn = document.getElementById('location-btn');
+            const requestingDiv = document.getElementById('location-requesting');
+            const successDiv = document.getElementById('location-success');
+            const deniedDiv = document.getElementById('location-denied');
+            
+            currentLocation = null;
+            locationBtn.classList.remove('hidden');
+            requestingDiv.classList.add('hidden');
+            successDiv.classList.add('hidden');
+            deniedDiv.classList.add('hidden');
+        }
+
+        // Success modal
+        function showSuccessModal(email) {
+            const modal = document.getElementById('success-modal');
+            const emailSpan = document.getElementById('confirmation-email');
+            
+            emailSpan.textContent = email;
+            modal.classList.remove('hidden');
+            
+            // Re-initialize icons in modal
+            setTimeout(() => {
+                initializeIcons();
+            }, 100);
+        }
+
+        function initializeSuccessModal() {
+            const modal = document.getElementById('success-modal');
+            const closeBtn = document.getElementById('close-success');
+            
+            closeBtn?.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+            
+            // Close on backdrop click
+            modal?.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+        }
+
+        // Admin panel functionality
+        function showAdminModal() {
+            const modal = document.getElementById('admin-modal');
+            modal.classList.remove('hidden');
+            
+            // Re-initialize icons in modal
+            setTimeout(() => {
+                initializeIcons();
+            }, 100);
+        }
+
+        function initializeAdminPanel() {
+            const modal = document.getElementById('admin-modal');
+            const closeBtn = document.getElementById('close-admin');
+            const loginForm = document.getElementById('admin-login-form');
+            const logoutBtn = document.getElementById('admin-logout');
+            
+            closeBtn?.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+            
+            // Close on backdrop click
+            modal?.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+            
+            // Admin login
+            loginForm?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                handleAdminLogin();
+            });
+            
+            // Admin logout
+            logoutBtn?.addEventListener('click', () => {
+                handleAdminLogout();
+            });
+        }
+
+        function handleAdminLogin() {
+            const email = document.getElementById('admin-email').value;
+            const password = document.getElementById('admin-password').value;
+            
+            // Hardcoded credentials for demo
+            if (email === 'aitrail92@gmail.com' && password === '909090') {
+                isAdminAuthenticated = true;
+                showAdminDashboard();
+                showToast('Admin login successful');
+            } else {
+                showToast('Invalid credentials', 'error');
+            }
+        }
+
+        function handleAdminLogout() {
+            isAdminAuthenticated = false;
+            hideAdminDashboard();
+            showToast('Logged out successfully');
+        }
+
+        function showAdminDashboard() {
+            const loginDiv = document.getElementById('admin-login');
+            const dashboardDiv = document.getElementById('admin-dashboard');
+            
+            loginDiv.classList.add('hidden');
+            dashboardDiv.classList.remove('hidden');
+            
+            loadOrders();
+        }
+
+        function hideAdminDashboard() {
+            const loginDiv = document.getElementById('admin-login');
+            const dashboardDiv = document.getElementById('admin-dashboard');
+            
+            loginDiv.classList.remove('hidden');
+            dashboardDiv.classList.add('hidden');
+        }
+
+        function loadOrders() {
+            const ordersList = document.getElementById('orders-list');
+            const orders = getOrders();
+            
+            if (orders.length === 0) {
+                ordersList.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: #666;">
+                        <p>No customer orders submitted yet</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            ordersList.innerHTML = orders.map((order, index) => `
+                <div class="order-item" data-testid="order-card-${index}">
+                    <div class="order-grid">
+                        <!-- Customer Info -->
+                        <div>
+                            <div class="order-section-title">
+                                <i data-lucide="user" class="icon-sm"></i>
+                                <span data-testid="text-customer-name-${index}">${order.firstName} ${order.lastName}</span>
+                            </div>
+                            <div class="order-info">
+                                <p data-testid="text-customer-email-${index}">📧 ${order.email}</p>
+                                ${order.phone ? `<p data-testid="text-customer-phone-${index}">📞 ${order.phone}</p>` : ''}
+                            </div>
+                        </div>
+                        
+                        <!-- Address Info -->
+                        <div>
+                            <div class="order-section-title">
+                                <i data-lucide="map-pin" class="icon-sm"></i>
+                                <span>Shipping Address</span>
+                            </div>
+                            <div class="order-info" data-testid="text-customer-address-${index}">
+                                <p>${order.address}</p>
+                                <p>${order.city}, ${order.state} ${order.zipCode}</p>
+                                <p>${order.country}</p>
+                                ${order.latitude && order.longitude ? `
+                                    <a href="https://www.google.com/maps?q=${order.latitude},${order.longitude}" 
+                                       target="_blank" 
+                                       class="view-link"
+                                       data-testid="link-location-${index}">
+                                        <i data-lucide="external-link" class="icon-sm"></i>
+                                        View on Map
+                                    </a>
+                                ` : ''}
+                            </div>
+                        </div>
+                        
+                        <!-- House Photo -->
+                        <div>
+                            <div class="order-section-title">
+                                <i data-lucide="camera" class="icon-sm"></i>
+                                <span>House Photo</span>
+                            </div>
+                            ${order.photoUrl ? `
+                                <div>
+                                    <img src="${order.photoUrl}" 
+                                         alt="Customer's house" 
+                                         class="house-photo"
+                                         data-testid="img-house-photo-${index}">
+                                    <a href="${order.photoUrl}" 
+                                       target="_blank" 
+                                       class="view-link"
+                                       data-testid="link-photo-${index}">
+                                        <i data-lucide="external-link" class="icon-sm"></i>
+                                        View Full Size
+                                    </a>
+                                </div>
+                            ` : `
+                                <p class="order-info" data-testid="text-no-photo-${index}">No photo uploaded</p>
+                            `}
+                        </div>
+                        
+                        <!-- Order Info -->
+                        <div>
+                            <div class="order-section-title">Order Details</div>
+                            <div class="order-info">
+                                <p data-testid="text-order-id-${index}"><strong>ID:</strong> ${order.id.slice(0, 8)}...</p>
+                                <p data-testid="text-order-date-${index}"><strong>Date:</strong> ${new Date(order.createdAt).toLocaleDateString()}</p>
+                                <p><strong>Product:</strong> AudioMax Pro (FREE)</p>
+                                ${order.latitude && order.longitude ? `
+                                    <p class="order-info" style="font-size: 12px;" data-testid="text-coordinates-${index}">
+                                        GPS: ${order.latitude.toFixed(6)}, ${order.longitude.toFixed(6)}
+                                    </p>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Re-initialize icons for the orders
+            setTimeout(() => {
+                initializeIcons();
+            }, 100);
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize icons first
+            initializeIcons();
+            
+            // Initialize all functionality
+            initializeHeader();
+            initializePhotoUpload();
+            initializeLocation();
+            initializeOrderForm();
+            initializeSuccessModal();
+            initializeAdminPanel();
+            
+            console.log('AudioMax Pro website initialized');
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // ESC to close modals
+            if (e.key === 'Escape') {
+                document.getElementById('success-modal')?.classList.add('hidden');
+                document.getElementById('admin-modal')?.classList.add('hidden');
+                document.getElementById('toast')?.classList.add('hidden');
+            }
+            
+            // Ctrl/Cmd + K to open admin (for quick access)
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                showAdminModal();
+            }
+        });
+
+        // Handle page refresh - no cleanup needed for base64 data URLs
+        window.addEventListener('beforeunload', () => {
+            // Base64 data URLs don't need cleanup like object URLs
+            console.log('Page unloading...');
+        });
+
+        // Export functions for testing (if needed)
+        if (typeof module !== 'undefined' && module.exports) {
+            module.exports = {
+                showToast,
+                scrollToElement,
+                handlePhotoUpload,
+                requestLocation,
+                saveOrder,
+                getOrders
+            };
+        }
+    </script>
+</body>
+</html>
