@@ -2,18 +2,14 @@
  // Global state
  let currentLocation = null;
  let uploadedPhoto = null;
-+let supabaseClient = null;
 +
-+// Initialize Supabase client
-+function initializeSupabase() {
-+    const supabaseUrl = 'YOUR_SUPABASE_URL'; // This will be replaced with actual URL from .env
-+    const supabaseKey = 'YOUR_SUPABASE_ANON_KEY'; // This will be replaced with actual key from .env
-+    
-+    // In a real implementation, these would come from environment variables
-+    // For now, we'll check if Supabase is available
-+    if (typeof supabase !== 'undefined') {
-+        supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
-+    }
+// Initialize EmailJS
+function initializeEmailJS() {
+    // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+    // Get this from your EmailJS dashboard at https://dashboard.emailjs.com/admin/account
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your actual public key
+    }
 +}
  
  // Utility functions
@@ -235,8 +231,8 @@
 @@ .. @@
  // Initialize everything when DOM is loaded
  document.addEventListener('DOMContentLoaded', function() {
-+    // Initialize Supabase
-+    initializeSupabase();
+    // Initialize EmailJS
+    initializeEmailJS();
 +    
      // Initialize Lucide icons
      if (typeof lucide !== 'undefined') {

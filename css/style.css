@@ -1,0 +1,55 @@
+@@ .. @@
+     margin-bottom: 16px;
+ }
+ 
++/* Email info card styles */
++.email-info-card {
++    background: #f8f9fa;
++    border: 1px solid #e9ecef;
++    border-radius: 8px;
++    padding: 24px;
++    margin: 20px 0;
++}
++
++.email-info-card h3 {
++    color: #FF6B35;
++    margin-bottom: 16px;
++    font-size: 18px;
++}
++
++.email-info-card h4 {
++    color: #1A1A1A;
++    margin: 16px 0 8px 0;
++    font-size: 16px;
++}
++
++.email-info-card ul {
++    margin: 8px 0 16px 20px;
++    color: #666;
++}
++
++.email-info-card li {
++    margin-bottom: 4px;
++}
++
++.setup-reminder {
++    background: #fff3cd;
++    border: 1px solid #ffeaa7;
++    border-radius: 6px;
++    padding: 16px;
++    margin-top: 16px;
++}
++
++.setup-reminder h4 {
++    color: #856404;
++    margin-top: 0;
++}
++
++.setup-reminder p {
++    color: #856404;
++    margin-bottom: 8px;
++}
++
+ /* Responsive design */
+ @media (max-width: 768px) {
+     .container {
